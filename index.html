@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick and Morty Characters</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favIcon.png" />
+  </head>
+  <body>
+    <header>
+      <h1>Rick and Morty Characters</h1>
+    </header>
+    <div class="container">
+      <div class="controls">
+        <button id="fetch-all" class="btn">Personajes</button>
+        <button id="toggle-filters" class="btn">Mostrar filtros</button>
+      </div>
+      <div id="filters" class="filter-group hidden">
+        <input type="text" id="name" class="input-field" placeholder="Name" />
+        <select id="status" class="input-field">
+          <option value="">Estado</option>
+          <option value="alive">Vivo</option>
+          <option value="dead">Muerto</option>
+          <option value="unknown">Desconocido</option>
+        </select>
+        <input
+          type="text"
+          id="species"
+          class="input-field"
+          placeholder="Species"
+        />
+        <input type="text" id="type" class="input-field" placeholder="Type" />
+        <select id="gender" class="input-field">
+          <option value="">Género</option>
+          <option value="female">Femenino</option>
+          <option value="male">Masculino</option>
+          <option value="genderless">Sin género</option>
+          <option value="unknown">Desconocido</option>
+        </select>
+        <button id="fetch-filtered" class="btn">Buscar</button>
+      </div>
+      <div id="results" class="results-container"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
